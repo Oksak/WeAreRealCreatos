@@ -1,0 +1,59 @@
+@import "../../styles"
+
+.form-section
+  padding: 30px 0
+  background-color: $dark
+  .button
+    text-transform: uppercase
+    width: 100%
+  input
+    background-color: lighten($dark,6%)
+    &:focus
+      background-color: white
+  form
+    grid-gap: $gutter
+    grid-template-columns: repeat(4,1fr)
+
+input,textarea
+  padding: 15px 20px
+  border: none
+  width: 80%
+  font-family: 'Arial', sans-serif
+  font-style: italic
+  outline: none
+  transition: background-color .25s ease
+  &::placeholder
+    color: lighten($dark,20%)
+
+
+
+@media only screen and (max-width: 905px)
+
+  .form-section
+    .container
+      form
+        grid-template-columns: 1fr 1fr
+      .button
+        width: 90%
+  input
+    width: 80%
+
+
+
+@media only screen and (max-width: 550px)
+
+  .form-section
+    .container
+      .button
+        width: 100%
+
+
+@media only screen and (max-width: 472px)
+
+  .form-section
+    .container
+      form
+        grid-template-columns: 1fr
+        margin-left: 25px
+      .button
+        width: 90%

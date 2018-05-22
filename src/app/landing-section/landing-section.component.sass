@@ -1,0 +1,56 @@
+@import "../../styles"
+
+.landing-section
+  padding: 80px 0
+  h2
+    font-size: 34px
+    font-weight: 800
+    color: $dark
+    line-height: 1.2
+    margin-top: 0
+    font-family:  'Titillium Web', sans-serif
+
+.img-responsive
+  height: auto
+  display: block
+  max-width: 100%
+
+.section-ready
+  background-color: $light
+  .container
+    grid-template-columns: 1fr 1fr
+
+.ready-left
+  border-right: 1px solid #dadada
+  font-size: 18px
+  padding: 60px 60px 60px 0
+  font-family: 'Arial', sans-serif
+  h2
+    margin-top: 0
+    margin-bottom: 40px
+
+.ready-right
+  padding-left: 40px
+
+
+
+@media only screen and (max-width: 991px)
+
+  .landing-section
+    padding: 0
+    h2
+      text-align: center
+      font-size: 28px
+
+
+  .section-ready
+    .container
+      grid-template-columns: 1fr
+    >div
+      padding: 0 8%
+      .ready-left
+        border: none
+
+
+
+
